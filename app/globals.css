@@ -6,10 +6,26 @@
 
 @custom-variant dark (&:is(.dark *));
 
+
+.dropzone {
+  @apply flex-1 flex items-center justify-center border-2 
+         border-dashed border-gray-300 p-12 text-center;
+}
+
+.toolbar {
+  @apply flex gap-2 p-4 bg-gray-100 border-b;
+}
+
+.font-signature {
+  @apply font-[cursive];
+}
+
 @theme {
   --font-sans: "Figtree", sans-serif;
   --font-mono: "Figtree", monospace;
 }
+
+
 
 :root {
   --primary: oklch(18.5% 0.03 262.91);
@@ -128,6 +144,8 @@
   }
   body {
   }
+
+  
 }
 
 @layer utilities {
